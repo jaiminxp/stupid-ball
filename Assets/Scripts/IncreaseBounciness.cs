@@ -9,15 +9,13 @@ public class IncreaseBounciness : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if (other.CompareTag ("Player"))
+		if (other.CompareTag("Player"))
 			bouncy.bounciness *= increaseFactor;
-		Debug.Log (bouncy.bounciness);
 	}
 
 	void OnTriggerExit2D(Collider2D other)
 	{
-		if (other.CompareTag ("Player"))
+		if (other.CompareTag("Player"))
 			bouncy.bounciness /= increaseFactor;
-		Debug.Log (bouncy.bounciness);
 	}
 }

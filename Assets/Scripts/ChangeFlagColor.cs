@@ -11,13 +11,13 @@ public class ChangeFlagColor : MonoBehaviour
 
 	void Start()
 	{
-		FlagSpriteRenderer = GetComponentInChildren<SpriteRenderer> ();
-		FlagSpriteRenderer.color = new Color(1,0,0,1);
+		FlagSpriteRenderer = GetComponentInChildren<SpriteRenderer>();
+		FlagSpriteRenderer.color = new Color(1, 0, 0, 1);
 	}
-		
-	void Update ()
+
+	void Update()
 	{
-		if (gameManager.index-1 == AssignedIndex)
-			FlagSpriteRenderer.color = new Color (0, 1, 0, 1);
+		if (gameManager.index - 1 == AssignedIndex)
+			FlagSpriteRenderer.color = new Color(0, 1, 0, 1);
 	}
 }

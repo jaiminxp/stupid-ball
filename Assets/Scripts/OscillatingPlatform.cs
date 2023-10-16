@@ -32,10 +32,10 @@ public class OscillatingPlatform : MonoBehaviour
 		reachedLimit = false;
 	}
 
-	void FixedUpdate () 
+	void FixedUpdate()
 	{
-		newPosition = new Vector2(Mathf.Lerp (leftLimit.position.x, rightLimit.position.x, midPoint), transform.position.y);
+		newPosition = new Vector2(Mathf.Lerp(leftLimit.position.x, rightLimit.position.x, midPoint), transform.position.y);
 		transform.position = newPosition;
 	}
-		
+
 }
