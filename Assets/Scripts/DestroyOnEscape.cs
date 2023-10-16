@@ -6,9 +6,9 @@ public class DestroyOnEscape : MonoBehaviour
 {
 	public int limit;
 
-	void Update () 
+	void Update()
 	{
 		if (transform.position.x >= limit)
-			Destroy (gameObject);
+			Destroy(gameObject);
 	}
 }

@@ -9,6 +9,6 @@ public class EndGame : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		gameManager.levelEnded = other.CompareTag ("Player");
+		gameManager.levelEnded = other.CompareTag("Player");
 	}
 }

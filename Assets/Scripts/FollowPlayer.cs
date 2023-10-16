@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FollowPlayer : MonoBehaviour 
+public class FollowPlayer : MonoBehaviour
 {
 	public Transform player;
 	Vector3 offset;
@@ -12,9 +12,9 @@ public class FollowPlayer : MonoBehaviour
 		offset = transform.position - player.position;
 	}
 
-	void Update ()
+	void Update()
 	{
-		
+
 		transform.position = player.position + offset;
 	}
 }
